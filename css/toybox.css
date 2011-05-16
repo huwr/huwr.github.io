@@ -1,0 +1,6 @@
+body {
+  background-color:#eee;
+  text-rendering: optimizeLegibility;
+}
+
+span[face] { -moz-transform:rotate(90deg); -webkit-transform:rotate(90deg); display:inline-block; margin-left:1em;}
