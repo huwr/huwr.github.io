@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Murrumbidgee Rover Crew</title> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" />
+  <link rel="stylesheet" href="styles/mrc.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="apple-touch-startup-image" href="imgs/startup.png">
+  <link rel="apple-touch-icon" href="imgs/icon.png"/>
+</head> 
+<body class="mrc-body"> 
+
+  <!--  WELCOME -->
+  <div data-role="page" data-fullscreen="true" class="mrc-welcome">
+    <div data-role="content"> 
+      <h1>Murrumbidgee Rovers</h1>
+      <img src="imgs/ddraig.png" alt="MRC Dragon">
+      <a href="#what" data-role="button">What?</a>
+      <a href="programme.html" data-role="button">Our Programme</a>
+      <a href="about.html" data-role="button" data-transition="flip">About the App</a>
+      <div id="mrc-copyright-notice">
+        <p>
+          Copyright &copy; 2011, Huw Rowlands and Murrumbidgee Rover Crew<br />
+          All rights reserved.
+        </p>
+      </div>
+    </div><!-- /content -->
+
+  </div><!-- /page -->
+
+  <!--  WHERE -->
+  <div data-role="page" id="what">
+
+  	<div data-role="header">
+  		<h1>What?</h1>
+  	</div><!-- /header -->
+
+  	<div data-role="content">	
+  	  <p>
+  	    We are the Murrumbidgee Rover Crew.  We're a Rover Scout crew in the Canberra, ACT.  Rovers are guys and girls
+  	    between 18 and 26 years old and like to have fun and get up to lots of tricks.  We have 
+  	    adventures and are all very good friends.  We get to go on long trips to odd places, put on big 
+  	    theatrical productions, learn about various skills and all sorts of stuff. Look at our
+  	    <a href="/programme.html">programme</a> to see what we're up to next.
+  	  </p>
+  	  
+  	  <p>
+  	    You can come join us, if you like! We meet at the North Kambah Scout Hall, Tuesdays at 7.30 PM.  Meetings
+  	    generally end around 9.30 PM with either a trip to the pub or ice cream - depends. 
+  	  </p>
+  	  
+  	  <p>If you want to come join us, please ring one of these guys. They're lovely:</p>
+  	  <ul>
+  	    <li>Huw: <a href="tel:0409999145">0409 999 145</a></li>
+  	    <li>Amanda: <a href="tel:0449557200">0449 557 200</a></li>
+  	  </ul>
+  	  
+  	  <p>There is also a picture of a <a href="#bunny" data-transition="pop" data-rel="dialog">rabbit</a> you can look at.</p>
+  	</div><!-- /content -->
+
+  </div><!-- /page -->
+  
+  <!-- BUNNY -->
+  <div data-role="page" id="bunny">
+    <div data-role="header">
+      <h1>Bunny!</h1>
+    </div>
+    
+    <div data-role="content">
+      <div style="text-align:center">
+        <h2>I'm adorable!</h2>
+      </div>
+      <img src="content/bunny.jpg" alt="MRC Dragon">
+    </div>
+  </div>  
+
+</body>
+
+</body>
+</html>
