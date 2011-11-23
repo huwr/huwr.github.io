@@ -2,9 +2,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VIGIL AND LAW OF A ROVER SCOUT
 %
-% SEE ALSO
-% * the letter template, in a different place and repository for some reason.
-% * the LaTeX wikibook: http://en.wikibooks.org/wiki/LaTeX
+% KNOWN TYPOGRAPHY ISSUES
+%  * This should probably be XeTeX'd and should probabaly use something like
+%    Hoeflr Text, or anything that isn't ``Modern''.  That may help it not 
+%    like a piece of techinical documentation...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[11pt]{article}
@@ -34,21 +35,10 @@
 %%%%%%%%%%%%%%%%%% STYLE OPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% % Change fonts
-% % Palatino for rm | Helvetica for ss | Courier for tt
-% \renewcommand{\rmdefault}{ppl} % rm
-\linespread{1.05}        % Palatino needs more leading
-% \usepackage[scaled]{helvet} % ss
-% %\usepackage{courier} % tt
-% \normalfont
-% \usepackage[T1]{fontenc}
+% Most of this crap was removed...
+% probably should be readded... so it doesn't look like a Uni maths assignment.
 
-% 
-% %Make headings Helvetica
-% \usepackage{sectsty}
-% \allsectionsfont{\sffamily}
-
-
+\linespread{1.05} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% END STYLE OPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,11 +83,11 @@
     pdfmenubar=true,			% show Acrobat's menu?
     pdffitwindow=false,		% window fit to page when opened
     pdfstartview={FitH},		% fits the width of the page to the window
-    pdftitle={LaTeX Template},		% title
+    pdftitle={The Vigil and Law of a Rover Scout},		% title
     pdfauthor={Lord Baden-Powell},		% author
     pdfsubject={The Vigil and Law of a Rover Scout},			% subject of the document
-    pdfcreator={\myname},	% creator of the document
-    pdfproducer={Murrumbidgee Rovers},	% producer of the document
+    pdfcreator={\myname, Crew Leader 2011, Murrumbidgee Rover Crew},	% creator of the document
+    pdfproducer={Murrumbidgee Rover Crew, ACT Branch, Scouts Australia},	% producer of the document
     pdfkeywords={},			% list of keywords
     pdfnewwindow=true,		% links in new window
     colorlinks=false,		% false: boxed links; true: colored links
