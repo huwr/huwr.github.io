@@ -1,11 +1,11 @@
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
 %&program=pdflatex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VIGIL AND LAW OF A ROVER SCOUT
 %
-% KNOWN TYPOGRAPHY ISSUES
-%  * This should probably be XeTeX'd and should probabaly use something like
-%    Hoeflr Text, or anything that isn't ``Modern''.  That may help it not 
-%    like a piece of techinical documentation...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[11pt]{article}
@@ -37,8 +37,13 @@
 
 % Most of this crap was removed...
 % probably should be readded... so it doesn't look like a Uni maths assignment.
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Monaco}
 
-\linespread{1.05} 
+\linespread{1.07} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% END STYLE OPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,7 +108,7 @@
 
 
 %%% TITLE 
-\title{The Vigil and Law of a Rover Scout}%Don't forget to change the title in hypersetup section!
+\title{\textss{The Vigil and Law of a Rover Scout}}%Don't forget to change the title in hypersetup section!
 \author{Robert Baden-Powell, 1st Baron Baden-Powell \\ \small{\textsc{om, gcmg, gcvo, kcb}}}
 \date{ \includegraphics[width=0.32\textwidth]{knight} } % edit month above.
 
