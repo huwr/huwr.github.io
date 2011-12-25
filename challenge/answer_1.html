@@ -1,0 +1,41 @@
+<h1 id="huw8217s_cryptanalysis_challenge_answer_1">Huw&#8217;s Cryptanalysis Challenge Answer 1</h1>
+
+<p><em>By Huw</em></p>
+
+<p>This was a simple <a href="http://en.wikipedia.org/wiki/ROT13">rot 13</a> cipher.  It works simply by replacing each letter with the letter 13 places further in the alphabet.</p>
+
+<p>The cipher is arranged into letter blocks of 5.  The last block is padded out with X.</p>
+
+<h3 id="cipher">Cipher</h3>
+
+<blockquote>
+  <p>SNENJ NLNIB VPRVF PNYYV ATORY YFSEB ZZRZB ELQBP UVZRP BZRUB ZRNTN VAPBZ RUBZR NTNVA GURLP NYYGU EBHTU GURBP RNAFB SGVZR JRYYX RRCNJ RYPBZ RVAGU RUVYY FVQRJ RYYXR RCNJR YPBZR VAGUR INYRF GUVFY NAQLB HXARJ JVYYF GVYYO RFVAT VATJU RALBH PBZRU BZRNT NVAGB JNYRF GUVFY NAQBS FBATJ VYYXR RCNJR YPBZR NAQJV GUNYB IRGUN GARIR ESNVY FJRYY XVFFN JNLRN PUUBH EBSUV ENRGU JURAL BHPBZ RUBZR NTNVA GBJNY RFKKK</p>
+</blockquote>
+
+<h3 id="plain">Plain</h3>
+
+<blockquote>
+  <p>Far away a voice is calling, <br />
+Bells from memory do chime <br />
+Come home again, come home again, <br />
+They call through the oceans of time.</p>
+
+<p>Well keep a welcome in the hillside. <br />
+Well keep a welcome in the Vales <br />
+This land you knew will still be singing <br />
+When you come home again to Wales.</p>
+
+<p>This land of song will keep a welcome <br />
+And with a love that never fails, <br />
+We'll kiss away each hour of hiraeth <br />
+When you come home again to Wales.</p>
+</blockquote>
+
+<p><strong>NB:</strong> the word &#8216;hiraeth&#8217; has no direct English translation.  It is a Welsh word meaning patriotic nostalgia.</p>
+
+<h3 id="a_ruby_solution">A ruby solution</h3>
+
+<p>You may have come up with this.</p>
+
+<pre><code>plain = cipher.tr "A-Z", "N-ZA-M"
+</code></pre>
