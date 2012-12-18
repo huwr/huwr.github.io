@@ -9,7 +9,7 @@ Deployment
 ----------
 Just copy it to some directory somewhere on a webserver.  Then: you're off.
 
-Currently, it's deployed at <http://toybox.huwr.net/brc/> . 
+Currently, it's deployed at <http://toybox.huwr.net/brc/> but that will go away by 1 Jan 2013.
 
 Contact
 -------
