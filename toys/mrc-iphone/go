@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "Starting!"
-python -m SimpleHTTPServer
-echo "All done. Phew!"
