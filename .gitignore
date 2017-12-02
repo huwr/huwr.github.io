@@ -6,3 +6,7 @@
 
 #stupid emacs stupid
 *~
+
+
+node_modules
+bower_components
